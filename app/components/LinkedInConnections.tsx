@@ -13,12 +13,12 @@ const LinkedInConnections: React.FC<LinkedInConnectionsProps> = ({ jobTitle, com
     )}`;
     return (
         <div className="bg-white shadow-md rounded-2xl p-6">
-            <h2 className="text-2xl font-bold mb-4">Find LinkedIn Connections</h2>
+            <h2 className="text-2xl font-bold mb-4">Find Relevant LinkedIn Connections</h2>
             <button
                 onClick={() => window.open(searchUrl, '_blank', 'noopener,noreferrer')}
-                className="text-lg font-semibold text-blue-600 hover:underline bg-blue-100 hover:bg-blue-200 rounded px-4 py-2 transition-colors"
+                className="primary-button px-2"
             >
-                {`Connect: Search LinkedIn for ${jobTitle}${companyName ? ` at ${companyName}` : ''}`}
+                Connect
             </button>
         </div>
     );
